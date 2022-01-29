@@ -470,16 +470,19 @@ body {
     height: 50px;
 }
 .footer__social-links li > img,
-.footer__social-links li > a {
+.footer__social-link > a {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e9e9ee;
+    background-color: #000000;
     border-radius: 50%;
 }
 @media (any-hover: hover) {
+    .footer__social-link > a {
+        background-color: #e9e9ee;
+    }
     .footer__social-link:hover > a {
         background-color: #000000;
     }
