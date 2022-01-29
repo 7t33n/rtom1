@@ -1,3 +1,10 @@
+.main-block {
+    min-height: 100vh;
+    overflow: auto;
+    background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
+    padding: 3.75vw 0px 0px 0px;
+    margin: 0px 0px 18vh 0px;
+}
 .main-block__header {
     margin: 0px 0px 9.6vh 0px;
 }
