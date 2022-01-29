@@ -342,21 +342,16 @@ body {
 
 .testimonials__client {
     padding: 10px;
-    display: grid;
     gap: 8px;
-    grid-template-areas:
-        "icon info"
-        "icon review";
+    display: flex;
     margin: 0px 0px 20px 0px;
 }
 .client {
 }
 .client__info {
-    grid-area: info;
 }
 .cllient__icon {
-    grid-area: icon;
-    align-self: start;
+    flex: 0 0 25%;
     height: 90px;
     width: 90px;
 }
@@ -369,10 +364,10 @@ body {
     margin-bottom: 10px;
 }
 .cllient__link {
-    margin: 0px 0px 20px 0px;
+    color: #9c69e2;
+    margin: 0px 0px 40px 0px;
 }
 .cllient__review {
-    grid-area: review;
 }
 .slide__controllers {
     display: flex;
