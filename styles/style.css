@@ -475,9 +475,15 @@ body {
 }
 .footer__social-links li > img,
 .footer__social-links li > a {
-    display: inline-block;
     height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9e9ee;
+    border-radius: 50%;
+}
+.footer__social-link a {
 }
 
 .footer__social {
