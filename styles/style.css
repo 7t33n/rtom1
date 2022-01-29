@@ -479,6 +479,11 @@ body {
     background-color: #e9e9ee;
     border-radius: 50%;
 }
+@media (any-hover: hover) {
+    .footer__social-link:hover > a {
+        background-color: #000000;
+    }
+}
 
 .footer__social {
     margin-bottom: 20px;
