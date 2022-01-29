@@ -331,6 +331,7 @@ body {
 .slider__wrapper {
     display: flex;
     gap: 0 20px;
+    margin: 0px 0px 20px 0px;
 }
 .slider__slide {
     flex: 0 0 100%;
@@ -344,7 +345,7 @@ body {
     padding: 10px;
     gap: 8px;
     display: flex;
-    margin: 0px 0px 20px 0px;
+    overflow: hidden;
 }
 .client {
 }
