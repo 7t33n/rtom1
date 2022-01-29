@@ -273,7 +273,6 @@ body {
     width: 20px;
     height: 2px;
     margin: 20px;
-    transition: width 0.3s ease 0s;
 }
 .arrow span {
     display: block;
@@ -283,6 +282,7 @@ body {
     background-color: #9c69e2;
     display: block;
     border-radius: 50px;
+    transition: width 0.3s ease 0s;
 }
 .arrow span::after {
     content: "";
