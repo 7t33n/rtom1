@@ -1,0 +1,41 @@
+.arrow {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    width: 20px;
+    height: 2px;
+    margin: 20px;
+}
+.arrow span {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background-color: #9c69e2;
+    display: block;
+    border-radius: 50px;
+    transition: width 0.3s ease 0s;
+}
+.arrow span::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: -3px;
+    right: -1px;
+    background-color: #9c69e2;
+    transform: rotate(45deg);
+    border-radius: 50px;
+}
+.arrow span::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: 3px;
+    right: -1px;
+    background-color: #9c69e2;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transform: rotate(-45deg);
+    border-radius: 50px;
+}

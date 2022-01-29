@@ -1,0 +1,129 @@
+.testimonials {
+    background-color: #9c69e2;
+    border-radius: 50px;
+    margin: 0px 0px 16vh 0px;
+}
+.testimonials__body {
+    margin: 5vw 0px 4vw 6vw;
+}
+.testimonials__title {
+    margin: 0 0 4vw 0;
+}
+.slider__wrapper {
+    display: flex;
+    gap: 0 20px;
+    margin: 0px 0px 20px 0px;
+}
+.slider__slide {
+    flex: 0 0 100%;
+    background-color: #fff;
+    box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.testimonials__client {
+    padding: 10px;
+    gap: 8px;
+    display: flex;
+    overflow: hidden;
+}
+.cllient__icon {
+    flex: 0 0 25%;
+    height: 90px;
+    width: 90px;
+}
+.cllient__icon img {
+    height: 100%;
+    width: 100%;
+}
+
+.cllient__name {
+    margin-bottom: 10px;
+}
+.cllient__link {
+    color: #9c69e2;
+    margin: 0px 0px 40px 0px;
+}
+.cllient__review {
+}
+.slide__controllers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider__bulets {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+.slider__bulet {
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: #f063b8;
+    cursor: pointer;
+}
+.slider__bulet--active {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+}
+.slider__arrows .arrow {
+    padding: 20px;
+    margin: 0;
+    width: auto;
+    height: auto;
+}
+.slider__prew {
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.slider__next {
+    cursor: pointer;
+}
+.slider__prew span,
+.slider__prew span::after,
+.slider__prew span::before,
+.slider__next span,
+.slider__next span::after,
+.slider__next span:before {
+    background-color: #fff;
+    opacity: 0.5;
+}
+@media (any-hover: hover) {
+    .slider__prew:hover > span,
+    .slider__next:hover > span {
+        width: 40px;
+        opacity: 1;
+    }
+    .slider__prew:hover span,
+    .slider__prew:hover span::after,
+    .slider__prew:hover span::before,
+    .slider__next:hover span,
+    .slider__next:hover span::after,
+    .slider__next:hover span:before {
+        background-color: #fff;
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 320px) {
+}
+@media screen and (min-width: 768px) {
+    .slider__slide {
+        flex: 0 0 40.3vw;
+    }
+    .slider__slide--next {
+        flex: 0 0 25vw;
+        position: relative;
+    }
+    .slider__slide--next::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 86%);
+        border-radius: 20px;
+    }
+}

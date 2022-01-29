@@ -1,0 +1,113 @@
+.main-block__header {
+    margin: 0px 0px 9.6vh 0px;
+}
+.header {
+    display: flex;
+    gap: 0 7.5vw;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+.header__menu {
+    flex: 1 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 2.5vw;
+    font-weight: 500;
+    line-height: calc(26 / 16);
+}
+.header__link {
+    cursor: pointer;
+    transition: color 0.3s ease 0s;
+}
+.header__link a {
+    padding: 5px 0;
+}
+
+.header__link--active {
+    color: #212353;
+    font-weight: 700;
+}
+.preview__title {
+    margin: 0px 0px 3vw 0px;
+}
+.preview__img {
+    margin: 0px 0px 3vw 0px;
+}
+.preview__img img {
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+}
+.preview__text {
+    margin: 0px 0px 3vw 0px;
+}
+.preview__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 60px;
+    background-color: #9c69e2;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50px;
+    margin: 5px auto;
+    padding: -5px 0px;
+    transition: box-shadow 0.3s ease 0s;
+}
+.preview__button a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (any-hover: hover) {
+    .header__link:hover {
+        color: #9c69e2;
+    }
+    .preview__button:hover {
+        box-shadow: 0 1px 4px rgba(156, 105, 226, 1), -23px 0 20px -23px rgba(156, 105, 226, 0.8),
+            23px 0 20px -23px rgba(156, 105, 226, 0.8), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    }
+}
+
+@media screen and (min-width: 320px) {
+}
+@media screen and (min-width: 768px) {
+    .main-block__header {
+        margin: 0px 0px 16vh 0px;
+    }
+    .preview {
+        position: relative;
+    }
+    .preview__title {
+        max-width: 44.3vw;
+        position: relative;
+    }
+    .preview__img {
+        position: absolute;
+        max-width: 50%;
+        bottom: 0;
+        right: 0;
+    }
+    .preview__img img {
+        max-height: 46.41vh;
+    }
+    .preview__text {
+        position: relative;
+        max-width: 50%;
+    }
+    .preview__button {
+        margin: 0;
+    }
+}
