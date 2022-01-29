@@ -461,7 +461,16 @@ body {
 }
 .footer__social-links li {
     cursor: pointer;
+    width: 50px;
+    height: 50px;
 }
+.footer__social-links li > img,
+.footer__social-links li > a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
 .footer__social {
     margin-bottom: 20px;
 }
