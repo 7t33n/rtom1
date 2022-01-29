@@ -425,6 +425,15 @@ body {
         width: 40px;
         opacity: 1;
     }
+    .slider__prew:hover span,
+    .slider__prew:hover span::after,
+    .slider__prew:hover span::before,
+    .slider__next:hover span,
+    .slider__next:hover span::after,
+    .slider__next:hover span:before {
+        background-color: #fff;
+        opacity: 1;
+    }
 }
 
 .footer {
