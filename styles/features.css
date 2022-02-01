@@ -48,7 +48,9 @@
     font-weight: 500;
 }
 .features-table__text {
-    margin: 0px 0px 2vw 0px;
+    margin: 0px 0px 1vw 0px;
+    max-height: 240px;
+    overflow: auto;
 }
 .features-table__more {
     display: flex;
