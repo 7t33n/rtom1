@@ -85,22 +85,19 @@
     transform: rotate(180deg);
 }
 
-.slider__prew span,
-.slider__prew span::after,
-.slider__prew span::before,
-.slider__next span,
-.slider__next span::after,
-.slider__next span:before {
+.slider__arrows .arrow span,
+.slider__arrows .arrow span:after,
+.slider__arrows .arrow span::before {
     background-color: #fff;
 }
+
 @media (any-hover: hover) {
-    .slider__arrows .arrow {
+    .slider__arrows .arrow span {
         opacity: 0.5;
     }
 
     .slider__arrows .arrow:hover > span {
         width: 40px;
-        opacity: 1;
     }
     .slider__arrows .arrow:hover span,
     .slider__arrows .arrow:hover span::after,
