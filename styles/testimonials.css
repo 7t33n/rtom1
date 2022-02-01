@@ -1,10 +1,15 @@
 .testimonials {
-    background-color: #9c69e2;
-    border-radius: 50px;
     margin: 0px 0px 16vh 0px;
+    width: 100vw;
+    overflow: hidden;
+}
+.testimonials .content-width {
+    overflow: visible;
 }
 .testimonials__body {
-    margin: 5vw 0px 4vw 6vw;
+    padding: 5vw 0px 4vw 6vw;
+    background-color: #9c69e2;
+    border-radius: 50px;
 }
 .testimonials__title {
     margin: 0 0 4vw 0;
@@ -75,13 +80,11 @@
     width: auto;
     height: auto;
 }
+
 .slider__prew {
     transform: rotate(180deg);
-    cursor: pointer;
 }
-.slider__next {
-    cursor: pointer;
-}
+
 .slider__prew span,
 .slider__prew span::after,
 .slider__prew span::before,
@@ -89,20 +92,19 @@
 .slider__next span::after,
 .slider__next span:before {
     background-color: #fff;
-    opacity: 0.5;
 }
 @media (any-hover: hover) {
-    .slider__prew:hover > span,
-    .slider__next:hover > span {
+    .slider__arrows .arrow {
+        opacity: 0.5;
+    }
+
+    .slider__arrows .arrow:hover > span {
         width: 40px;
         opacity: 1;
     }
-    .slider__prew:hover span,
-    .slider__prew:hover span::after,
-    .slider__prew:hover span::before,
-    .slider__next:hover span,
-    .slider__next:hover span::after,
-    .slider__next:hover span:before {
+    .slider__arrows .arrow:hover span,
+    .slider__arrows .arrow:hover span::after,
+    .slider__arrows .arrow:hover span::before {
         background-color: #fff;
         opacity: 1;
     }
