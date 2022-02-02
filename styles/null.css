@@ -18,6 +18,9 @@ html,
 body {
 	height: 100%;
 }
+address {
+	font-style: normal;
+}
 body {
 	line-height: 1;
 	-ms-text-size-adjust: 100%;
