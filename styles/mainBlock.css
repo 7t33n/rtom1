@@ -31,13 +31,14 @@
 .header__link {
     cursor: pointer;
     transition: color 0.3s ease 0s;
+    color: var(--c-second);
 }
 .header__link a {
     padding: 5px 0;
 }
 
 .header__link--active {
-    color: #212353;
+    color: var(--c-main);
     font-weight: 700;
 }
 .preview__title {
@@ -60,11 +61,11 @@
     justify-content: center;
     width: 170px;
     height: 60px;
-    background-color: #9c69e2;
-    color: #fff;
+    background-color: var(--c-light);
+    color: var(--c-third);
     font-size: 18px;
     font-weight: 700;
-    border-radius: 50px;
+    border-radius: var(--main-border-radius);
     margin: 5px auto;
     padding: -5px 0px;
     transition: box-shadow 0.3s ease 0s;
@@ -79,7 +80,7 @@
 
 @media (any-hover: hover) {
     .header__link:hover {
-        color: #9c69e2;
+        color: var(--c-light);
     }
     .preview__button:hover {
         box-shadow: 0 1px 4px rgba(156, 105, 226, 1), -23px 0 20px -23px rgba(156, 105, 226, 0.8),

@@ -3,10 +3,11 @@ html {
 }
 body {
     min-width: 320px;
-    background-color: #fff;
-    font-size: 16px;
-    font-family: "Ubuntu";
-    font-weight: 400;
+    background-color: var(--bg-main);
+    font-size: var(--fontSize);
+    font-family: var(--fontFamily);
+    font-weight: var(--main-weight);
+    color: var(--c-main);
 }
 .wrapper {
     width: 100%;
@@ -34,17 +35,19 @@ body {
     line-height: calc(52 / 40);
 }
 .sub-title--white {
-    color: #fff;
+    color: var(--c-third);
 }
 
 .text {
     line-height: calc(26 / 16);
     font-weight: 300;
+    color: var(--c-second);
 }
 .text-sp-attention {
     font-weight: 500;
     font-size: 18px;
     line-height: calc(28.8 / 18);
+    color: var(--c-second);
 }
 .text-low {
     line-height: calc(32 / 18);

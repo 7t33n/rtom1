@@ -57,6 +57,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-weight: 700;
 }
 @media (any-hover: hover) {
     .features-table__more:hover .features-table__arrow span {
@@ -112,9 +113,5 @@
     }
     .features-table__text {
         flex: 1 1 auto;
-    }
-
-    .features-table__more {
-        font-weight: 700;
     }
 }

@@ -11,9 +11,9 @@
     position: relative;
     width: 20px;
     height: 2px;
-    background-color: #9c69e2;
+    background-color: var(--c-light);
     display: block;
-    border-radius: 50px;
+    border-radius: var(--main-border-radius);
     transition: width 0.3s ease 0s;
 }
 .arrow span::after {
@@ -23,9 +23,9 @@
     height: 2px;
     top: -3px;
     right: -1px;
-    background-color: #9c69e2;
+    background-color: var(--c-light);
     transform: rotate(45deg);
-    border-radius: 50px;
+    border-radius: var(--main-border-radius);
 }
 .arrow span::before {
     content: "";
@@ -34,8 +34,8 @@
     height: 2px;
     top: 3px;
     right: -1px;
-    background-color: #9c69e2;
+    background-color: var(--c-light);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     transform: rotate(-45deg);
-    border-radius: 50px;
+    border-radius: var(--main-border-radius);
 }
